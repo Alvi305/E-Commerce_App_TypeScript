@@ -12,7 +12,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/bcryptjs": "^3.0.0",
     "@types/cors": "^2.8.18",
+    "@types/jsonwebtoken": "^9.0.9",
     "@typescript-eslint/eslint-plugin": "^8.32.1",
     "@typescript-eslint/parser": "^8.32.1",
     "eslint": "^9.27.0",
@@ -22,10 +24,12 @@
   "dependencies": {
     "@typegoose/typegoose": "^12.16.0",
     "@types/express": "^5.0.2",
+    "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.15.1"
   }
 }
