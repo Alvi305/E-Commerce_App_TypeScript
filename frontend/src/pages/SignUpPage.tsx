@@ -1,15 +1,14 @@
 import { useContext, useEffect, useState } from 'react'
-import { Link, useLocation, useNavigate } from 'react-router-dom'
-import { Store } from '../Store'
-import { useSignupMutation } from '../hooks/userHooks'
-import { toast } from 'react-toastify'
-import type { ApiError } from '../types/ApiError'
-import { Helmet } from 'react-helmet-async'
 import { Button, Container, Form } from 'react-bootstrap'
-
+import { Helmet } from 'react-helmet-async'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify'
+import { useSignupMutation } from '../hooks/userHooks'
+import { Store } from '../Store'
+import { ApiError } from '../types/ApiError'
 import { getError } from '../utils'
 
-export default function SignUpPage() {
+export default function SignupPage() {
   const navigate = useNavigate()
   const { search } = useLocation()
   const redirectInUrl = new URLSearchParams(search).get('redirect')
@@ -29,7 +28,7 @@ export default function SignUpPage() {
     }
   }, [navigate, redirect, userInfo])
 
-  const { mutateAsync: signup, isLoading } = useSignupMutation()
+  const { mutateAsync: signup, isPending } = useSignupMutation()
 
   const submitHandler = async (e: React.SyntheticEvent) => {
     e.preventDefault()
@@ -64,7 +63,7 @@ export default function SignUpPage() {
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="email">
-          <Form.Label>email</Form.Label>
+          <Form.Label>Email</Form.Label>
           <Form.Control
             type="email"
             required
