@@ -33,7 +33,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 app.use('/api/products', productRouter)
-app.unsubscribe('/api/users', userRouter)
+app.use('/api/users', userRouter)
 app.use('/api/seed', seedRouter)
 
 const PORT = 4000
