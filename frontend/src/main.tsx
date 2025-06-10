@@ -21,6 +21,7 @@ import CartPage from './pages/CartPage'
 import SigninPage from './pages/SigninPage'
 import SignUpPage from './pages/SignUpPage'
 import ShippingAddressPage from './pages/ShippingAddressPage'
+import PaymentMethodPage from './pages/PaymentMethodPage'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -31,6 +32,7 @@ const router = createBrowserRouter(
       <Route path="signin" element={<SigninPage />} />
       <Route path="signup" element={<SignUpPage />} />
       <Route path="shipping" element={<ShippingAddressPage />} />
+      <Route path="payment" element={<PaymentMethodPage />} />
     </Route>
   )
 )
