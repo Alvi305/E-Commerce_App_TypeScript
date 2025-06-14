@@ -9,6 +9,7 @@ import {
 } from 'react-bootstrap'
 import { useContext, useEffect } from 'react'
 import { Store } from './Store'
+import { LinkContainer } from 'react-router-bootstrap'
 
 function App() {
   const {
@@ -53,7 +54,14 @@ function App() {
               )}
             </Link>
             {userInfo ? (
-              <NavDropdown title={userInfo.name} id="basic-nav-dropdown">
+              <NavDropdown
+                title={userInfo.name}
+                id="basic-nav-dropdown"
+                className="dropdown-menu-start"
+              >
+                <Link to="/orderhistory" className="dropdown-item">
+                  Order History
+                </Link>
                 <Link
                   className="dropdown-item"
                   to="#signout"
