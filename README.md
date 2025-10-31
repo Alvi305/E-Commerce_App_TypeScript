@@ -58,7 +58,8 @@ $ npm run dev
 
 ### 7. Admin Login
 
+- Run http://localhost:4000/api/seed to create sample items and admin user with password
+- Enter admin email and password and click signin
+
 This app was made following the tutorial guidelines of the following video: https://www.youtube.com/watch?v=-ifcPnXHn8Q. 
 
-- Run http://localhost:3000/signin
-- Enter admin email and password and click signin
