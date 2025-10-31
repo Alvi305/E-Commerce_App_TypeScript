@@ -48,7 +48,7 @@ $ npm start
 # open new terminal
 $ cd frontend
 $ npm install
-$ npm start
+$ npm run dev
 ```
 
 ### 6. Seed Users and Products
