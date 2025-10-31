@@ -10,8 +10,6 @@ A TypeScript App showcase by building a fully-functional e-commerce website  lik
 - Handling authentication and authorization using JsonWebToken and express middleware.
 - PayPal and Stipe for online payment,
 - Render for deployment
-- Google Map for locate customer address on map
-- Mailgun to email order receipt to user
 
 ## Run Locally
 
