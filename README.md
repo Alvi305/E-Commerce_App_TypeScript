@@ -56,6 +56,9 @@ $ npm start
 - Run this on browser: http://localhost:5000/api/seed
 - It returns admin email and password and 6 sample products
 
+
+This app was made following the tutorial guidelines of the following video: https://www.youtube.com/watch?v=-ifcPnXHn8Q. 
+
 ### 7. Admin Login
 
 - Run http://localhost:3000/signin
