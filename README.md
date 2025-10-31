@@ -51,7 +51,7 @@ $ npm run dev
 
 ### 6. Seed Users and Products
 
-- Run this on browser or using postman: http://localhost:4000/api/seed to generate sample items and sample user.
+- Run http://localhost:5173/signin
 - It returns admin email and password and 6 sample products
 
 ### 7. Admin Login
