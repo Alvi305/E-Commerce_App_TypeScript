@@ -1,5 +1,17 @@
 {
   "dependencies": {
     "mongodb": "^6.16.0"
-  }
+  },
+  "name": "ecommerce-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "build": "cd backend && npm install && npm run build  && cd ../frontend && npm install && npm run build",
+    "start": "TG_ALLOW_MIXED=ALLOW  node backend/build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
