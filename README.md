@@ -51,13 +51,12 @@ $ npm run dev
 
 ### 6. Seed Users and Products
 
-- Run http://localhost:5173/signin
-- It returns admin email and password and 6 sample products
+- Run http://localhost:4000/api/seed to create sample items and an admin user with a password
+- It returns the admin email and password and 6 sample products
 
 ### 7. Admin Login
-
-- Run http://localhost:4000/api/seed to create sample items and admin user with password
-- Enter admin email and password and click signin
+- Run http://localhost:5173/signin
+- Enter admin email and password and click Sign In
 
 This app was made following the tutorial guidelines of the following video: https://www.youtube.com/watch?v=-ifcPnXHn8Q. 
 
